@@ -22,13 +22,11 @@ const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
     if (isDarkMode) {
       element.classList.add("dark");
       document.body.classList.add("darkMode");
-      // localStorage.setItem("theme", "dark");
       Cookies.set("theme", "dark");
       setIsChangedMode(true);
     } else {
       element.classList.remove("dark");
       document.body.classList.remove("darkMode");
-      // localStorage.removeItem("theme");
       Cookies.remove("theme");
       setIsChangedMode(false);
     }
