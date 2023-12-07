@@ -19,18 +19,18 @@ const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
   useEffect(() => {
     const element = document.documentElement;
 
-    if (isDarkMode) {
+    if (isDarkMode && typeof window !== "undefined") {
       element.classList.add("dark");
       document.body.classList.add("darkMode");
-      localStorage.setItem("theme", "dark");
+      // localStorage.setItem("theme", "dark");
       setIsChangedMode(true);
     } else {
       element.classList.remove("dark");
       document.body.classList.remove("darkMode");
-      localStorage.removeItem("theme");
+      // localStorage.removeItem("theme");
       setIsChangedMode(false);
     }
-  }, [isDarkMode]);
+  }, []);
 
   useEffect(() => {
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
