@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
-
+import Cookies from "js-cookie";
 interface ChangedModsProps {
   setIsChangedMode: (props: boolean) => void;
 }
 
 const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    const storedTheme = localStorage.getItem("theme");
+    const storedTheme = Cookies.get("theme");
     return storedTheme === "dark";
   });
 
@@ -19,15 +19,17 @@ const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
   useEffect(() => {
     const element = document.documentElement;
 
-    if (isDarkMode && typeof window !== "undefined") {
+    if (isDarkMode) {
       element.classList.add("dark");
       document.body.classList.add("darkMode");
       // localStorage.setItem("theme", "dark");
+      Cookies.set("theme", "dark");
       setIsChangedMode(true);
     } else {
       element.classList.remove("dark");
       document.body.classList.remove("darkMode");
       // localStorage.removeItem("theme");
+      Cookies.remove("theme");
       setIsChangedMode(false);
     }
   }, []);
