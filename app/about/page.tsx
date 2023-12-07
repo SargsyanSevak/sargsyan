@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import React from "react";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { FaCss3Alt, FaJsSquare, FaReact, FaSass } from "react-icons/fa";
 import {
