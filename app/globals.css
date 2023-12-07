@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Noto+Sans+Armenian:wght@400;800&family=Roboto&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Noto Sans Armenian', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.6px;
+  -webkit-tap-highlight-color: transparent;
+}
