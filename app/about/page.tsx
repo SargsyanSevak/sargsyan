@@ -54,7 +54,7 @@ const page = () => {
     <>
       <div className="pb-20 md:pt-40 pt-28 flex md:flex-row flex-col  justify-center items-center gap-10 text-center p-4">
         <div className="flex justify-center items-center md:w-[30%] w-[60%]">
-          <img src="/9.jpg" alt="" className="rounded-[24px]" />
+          <img src="/9.jpg" alt="me" className="rounded-[24px]" />
         </div>
         <div className="md:w-[70%] w-full">
           <p className="text-2xl text-justify md:text-4xl font-extrabold py-4 leading-tight block dark:text-white">
