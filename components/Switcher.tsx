@@ -1,14 +1,11 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
-import Cookies from "js-cookie";
-interface ChangedModsProps {
-  setIsChangedMode: (props: boolean) => void;
-}
 
-const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
+const Switcher = () => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    const storedTheme = Cookies.get("theme");
+    const storedTheme = localStorage.getItem("theme");
     return storedTheme === "dark";
   });
 
@@ -22,15 +19,13 @@ const Switcher: React.FC<ChangedModsProps> = ({ setIsChangedMode }) => {
     if (isDarkMode) {
       element.classList.add("dark");
       document.body.classList.add("darkMode");
-      Cookies.set("theme", "dark");
-      setIsChangedMode(true);
+      localStorage.setItem("theme", "dark");
     } else {
       element.classList.remove("dark");
       document.body.classList.remove("darkMode");
-      Cookies.remove("theme");
-      setIsChangedMode(false);
+      localStorage.removeItem("theme");
     }
-  }, []);
+  }, [isDarkMode]);
 
   useEffect(() => {
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
