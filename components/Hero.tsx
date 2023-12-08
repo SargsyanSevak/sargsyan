@@ -1,5 +1,7 @@
 import React from "react";
 import GsapMagnetic from "./Gsap";
+import Link from "next/link";
+import { MdArrowOutward } from "react-icons/md";
 const Hero = () => {
   return (
     <div className="flex flex-col justify-center items-center gap-6 dark:text-white">
@@ -10,11 +12,14 @@ const Hero = () => {
         I'm currently at Snap, where I design experiences around finding and
         using AR Lenses on Snapchat 👻
       </p>
-      <GsapMagnetic>
-        <button className="rounded-[24px] border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] transition-colors duration-300 text-[20px]">
-          About me
-        </button>
-      </GsapMagnetic>
+      <Link href={"/about"}>
+        <GsapMagnetic>
+          <button className="rounded-[24px] border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] transition-colors duration-300 text-[20px] flex items-center gap-4">
+            About me
+            <MdArrowOutward />
+          </button>
+        </GsapMagnetic>
+      </Link>
     </div>
   );
 };
