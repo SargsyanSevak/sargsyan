@@ -4,10 +4,11 @@ import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
 
 const Switcher = () => {
-  const storedTheme = localStorage.getItem("theme");
-  const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    return storedTheme === "dark";
-  });
+  const storedTheme =
+    typeof window !== "undefined"
+      ? window.localStorage.getItem("theme")
+      : false;
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
 
   const toggleDarkMode = () => {
     setIsDarkMode((prev) => !prev);
@@ -25,7 +26,7 @@ const Switcher = () => {
       document.body.classList.remove("darkMode");
       localStorage.removeItem("theme");
     }
-  }, [isDarkMode]);
+  }, [isDarkMode, storedTheme]);
 
   useEffect(() => {
     const darkQuery = window.matchMedia("(prefers-color-scheme: dark)");
@@ -46,13 +47,13 @@ const Switcher = () => {
       onClick={toggleDarkMode}
     >
       {isDarkMode ? (
-        <span className="cursor-pointer text-yellow-500">
+        <div className="cursor-pointer text-yellow-500">
           <FiSun />
-        </span>
+        </div>
       ) : (
-        <span className="cursor-pointer text-black">
+        <div className="cursor-pointer text-black">
           <HiOutlineMoon />
-        </span>
+        </div>
       )}
     </div>
   );
