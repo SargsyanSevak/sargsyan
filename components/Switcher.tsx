@@ -4,8 +4,8 @@ import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
 
 const Switcher = () => {
+  const storedTheme = localStorage.getItem("theme");
   const [isDarkMode, setIsDarkMode] = useState<boolean>(() => {
-    const storedTheme = localStorage.getItem("theme");
     return storedTheme === "dark";
   });
 
