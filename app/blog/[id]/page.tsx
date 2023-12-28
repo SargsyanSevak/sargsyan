@@ -46,6 +46,32 @@ export async function generateMetadata({ params }: any) {
           },
         ],
       },
+      linkedin: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.description,
+        images: [
+          {
+            url: post.ogImage || siteMetadata.socialBanner,
+            width: 1200,
+            height: 630,
+            alt: "Blog single page image",
+          },
+        ],
+      },
+      telegram: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.description,
+        images: [
+          {
+            url: post.ogImage || siteMetadata.socialBanner,
+            width: 1200,
+            height: 630,
+            alt: "Blog single page image",
+          },
+        ],
+      },
     };
   } catch (error) {
     return {
