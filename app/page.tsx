@@ -1,3 +1,4 @@
+import Blogs from "@/components/Blogs";
 import Card from "@/components/Card";
 import Hero from "@/components/Hero";
 import { Metadata } from "next";
@@ -12,6 +13,9 @@ export default function Home() {
         {[1, 2, 3, 4, 5].map((i) => (
           <Card key={i} />
         ))}
+      </div>
+      <div>
+        <Blogs />
       </div>
     </main>
   );

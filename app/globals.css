@@ -15,3 +15,19 @@ body{
   letter-spacing: 0.6px;
   -webkit-tap-highlight-color: transparent;
 }
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  border-radius: 16px;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 40;
+}
