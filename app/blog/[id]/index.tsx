@@ -22,20 +22,17 @@ const BlogDetails = () => {
 
   return (
     <article className="px-6 md:py-20 py-[64px]">
-      <h1 className="md:text-[40px] sm:text-[32px] text-[24px] font-bold text-center dark:text-white max-w-[900px] mx-auto">
+      <h1 className="md:text-[40px] sm:text-[32px] text-[24px] font-bold text-center dark:text-white max-w-[1000px] mx-auto">
         {post.title}
       </h1>
       <div className="flex justify-between items-center w-full h-fit mt-10 flex-wrap max-w-[900px] mx-auto">
-        <div className="flex flex-col items-start gap-x-4 text-xs ">
+        <div className="flex  items-center gap-x-4 text-xs font-semibold">
           <time dateTime={post.datetime} className="text-gray-500">
             {post.date}
           </time>
           <p className="relative z-10 rounded-full  py-1.5 font-medium text-gray-500 ">
             {post.category.title}
           </p>
-        </div>
-        <div className="flex items-start">
-          <Share shareUrl={shareURL} />
         </div>
       </div>
       <div className="max-w-[900px]  mt-10 mx-auto">
@@ -63,6 +60,9 @@ const BlogDetails = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div className="flex justify-center items-center w-full bg-[#EDEFF1] dark:bg-[#133B5C] p-4 mt-10 rounded-[16px] max-w-[900px] mx-auto">
+        <Share shareUrl={shareURL} imageUrl={post.ogImage} />
       </div>
     </article>
   );

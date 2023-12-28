@@ -8,7 +8,7 @@ siteMetadata = {
     theme: 'system',
     siteUrl: 'https://sargsyan.vercel.app/', 
     siteLogo: '/favicon.ico',
-    socialBanner: '/opengraph-image.png', // add social banner in the public folder
+    socialBanner: '/og.png', // add social banner in the public folder
     email: 'thesevaksargsyan@gmail.com', 
     twitter: 'https://twitter.com/sevaksargsyan',
     facebook: 'https://facebook.com/sevaksargsyan',

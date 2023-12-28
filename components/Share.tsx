@@ -15,11 +15,14 @@ import {
 
 interface ShareProps {
   shareUrl: string;
+  imageUrl?: string;
 }
 const Share = ({ shareUrl }: ShareProps) => {
   return (
-    <div className="w-full flex flex-col gap-2 flex-wrap justify-between items-start rounded-[2px]">
-      <h1 className="font-semibold text-gray-500 ">Share with</h1>
+    <div className="w-full flex  gap-2 flex-wrap justify-between items-start rounded-[2px] max-w-[900px] mx-auto">
+      <h1 className="font-semibold dark:text-gray-400 text-gray-700">
+        Share with
+      </h1>
       <div className="flex justify-end items-center gap-4 text-gray-700 dark:text-gray-400 ">
         <FacebookShareButton url={shareUrl}>
           <FaFacebookF
