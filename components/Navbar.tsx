@@ -5,6 +5,7 @@ import GsapMagnetic from "./Gsap";
 import MenuItems from "./TabMenu";
 import Link from "next/link";
 import { useState } from "react";
+import LanguageSwitcher from "./LanguageSwitcher";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
 
@@ -28,6 +29,11 @@ const Navbar = () => {
         <GsapMagnetic>
           <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl">
             <Switcher />
+          </div>
+        </GsapMagnetic>
+        <GsapMagnetic>
+          <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl">
+            <LanguageSwitcher />
           </div>
         </GsapMagnetic>
         <div className="md:hidden block relative">
