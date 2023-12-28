@@ -26,9 +26,7 @@ export async function generateMetadata({ params }: any) {
         type: "website",
         images: [
           {
-            url:
-              "https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg" ||
-              siteMetadata.socialBanner,
+            url: post.ogImage || siteMetadata.socialBanner,
             width: 1200,
             height: 630,
             alt: "Blog single page image",
@@ -41,9 +39,7 @@ export async function generateMetadata({ params }: any) {
         description: post.description,
         images: [
           {
-            url:
-              "https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-600nw-1029506242.jpg" ||
-              siteMetadata.socialBanner,
+            url: post.ogImage || siteMetadata.socialBanner,
             width: 1200,
             height: 630,
             alt: "Blog single page image",

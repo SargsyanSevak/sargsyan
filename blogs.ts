@@ -10,6 +10,7 @@ export const posts = [
       datetime: "16.05.2023",
       category: { title: "Web Development", href: "#" },
       embedId:"SES2nV_zYY4?si",
+      ogImage:'/1.jpeg',
       author: {
         name: "Sevak Sargsyan",
         role: "Front-end developer",
@@ -28,6 +29,7 @@ export const posts = [
       datetime: "01.07.2023",
       category: { title: "Web Development", href: "#" },
       embedId:"gyBd49ucoMw",
+      ogImage:'/2.jpeg',
       author: {
         name: "Sevak Sargsyan",
         role: "Front-end developer",
@@ -46,6 +48,7 @@ export const posts = [
       datetime: "18.01.2023",
       category: { title: "Web Development", href: "#" },
       embedId:"JCFd3dVGIhc",
+      ogImage:'/3.jpeg',
       author: {
         name: "Sevak Sargsyan",
         role: "Front-end developer",
