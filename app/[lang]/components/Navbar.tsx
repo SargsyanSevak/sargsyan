@@ -6,12 +6,18 @@ import MenuItems from "./TabMenu";
 import Link from "next/link";
 import { useState } from "react";
 import MobileNav from "./MobileNav";
+import DropDown from "./DropDown";
+import { CiGlobe } from "react-icons/ci";
+import { IoMenuOutline } from "react-icons/io5";
 
 const Navbar = ({ lang, navigation }: any) => {
   const [openNav, setOpenNav] = useState(false);
-
+  const [openDropDown, setOpenDropDown] = useState(false);
   const toggleNav = () => {
     setOpenNav((cur) => !cur);
+  };
+  const toggleDropDown = () => {
+    setOpenDropDown((cur: boolean) => !cur);
   };
   return (
     <div className="w-full h-20 rounded-lg mt-6 flex justify-between items-center px-4 sticky top-4 right-0 left-0 z-50">
@@ -32,18 +38,36 @@ const Navbar = ({ lang, navigation }: any) => {
             <Switcher />
           </div>
         </GsapMagnetic>
-        {/* <GsapMagnetic>
-          <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl">
-            <LanguageSwitcher />
+        <div className="md:block hidden">
+          <div
+            className="px-6 h-12 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl flex justify-center items-center gap-4 cursor-pointer"
+            onClick={toggleDropDown}
+          >
+            <IoMenuOutline fontSize={30} className="dark:text-white" />
+
+            <CiGlobe fontSize={30} className="dark:text-white" />
+
+            <DropDown
+              lang={lang}
+              openDropDown={openDropDown}
+              toggleDropDown={toggleDropDown}
+            />
           </div>
-        </GsapMagnetic> */}
+        </div>
+
         <div className="md:hidden block relative">
           <GsapMagnetic>
             <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl flex justify-center items-center">
               <Hamburger toggled={openNav} toggle={toggleNav} color="orange" />
             </div>
           </GsapMagnetic>
-          {openNav && <MobileNav lang={lang} navigation={navigation} />}
+          {openNav && (
+            <MobileNav
+              lang={lang}
+              navigation={navigation}
+              setOpenNav={setOpenNav}
+            />
+          )}
         </div>
       </div>
     </div>
