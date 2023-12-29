@@ -16,7 +16,7 @@ export const posts = [
         role: "Front-end developer",
         href: "#",
         imageUrl:
-        "/9.JPG",
+        "/profileImage.jpg",
       },
     },
     {
@@ -35,7 +35,7 @@ export const posts = [
         role: "Front-end developer",
         href: "#",
         imageUrl:
-        "/9.JPG",
+        "/profileImage.jpg",
       },
     },
     {
@@ -54,7 +54,7 @@ export const posts = [
         role: "Front-end developer",
         href: "#",
         imageUrl:
-          "/9.JPG",
+        "/profileImage.jpg",
       },
     },
     
