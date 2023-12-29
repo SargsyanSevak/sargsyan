@@ -5,8 +5,6 @@ import GsapMagnetic from "./Gsap";
 import MenuItems from "./TabMenu";
 import Link from "next/link";
 import { useState } from "react";
-import LanguageSwitcher from "./LanguageSwitcher";
-import LocaleSwitcher from "./locale-switcher";
 import MobileNav from "./MobileNav";
 
 const Navbar = ({ lang, navigation }: any) => {

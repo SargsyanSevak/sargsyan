@@ -23,18 +23,23 @@ const menuItems = [
 const MobileNav = ({ lang, navigation }: any) => {
   const pathname = usePathname();
   return (
-    <div className="absolute top-20 right-0 w-[300px] min-h-44 bg-white shadow-2xl rounded-[24px] p-4">
-      <ul className="flex flex-col justify-center items-center gap-4 w-full h-full ">
+    <div className="absolute top-20 right-0 w-[300px] min-h-44 bg-white dark:bg-[#133B5C] shadow-2xl rounded-[24px] p-4">
+      <ul className="flex flex-col justify-center items-center gap-2 w-full h-full ">
         {menuItems.map((el: any) => (
           <GsapMagnetic key={el.title}>
             <li
               className={`${
                 pathname.includes(el.href)
-                  ? "bg-gray-100 dark:bg-[#1E5F74] rounded-l-full rounded-r-full shadow-md"
+                  ? "bg-gray-100 dark:bg-[#1E5F74] rounded-l-full rounded-r-full shadow-md w-full text-center"
                   : ""
-              } py-[14px] px-6`}
+              } py-[10px] px-6`}
             >
-              <Link href={`/${lang}${el.href}`}>{navigation[el.title]}</Link>
+              <Link
+                href={`/${lang}${el.href}`}
+                className="text-[20px] dark:text-white"
+              >
+                {navigation[el.title]}
+              </Link>
             </li>
           </GsapMagnetic>
         ))}
