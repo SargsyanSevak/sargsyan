@@ -13,7 +13,7 @@ const Hero = ({ lang, page }: any) => {
       </p>
       <Link href={`/${lang}/about`}>
         <GsapMagnetic>
-          <button className="rounded-[24px] border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] transition-colors duration-300 text-[20px] flex items-center gap-4">
+          <button className="rounded-[24px] border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] dark:hover:bg-[#1E5F74] transition-colors duration-300 text-[20px] flex items-center gap-4">
             {page.home.button}
             <MdArrowOutward />
           </button>
