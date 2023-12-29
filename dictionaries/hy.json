@@ -1,12 +1,15 @@
 {
   "navigation": {
-    "home": "Startseite",
-    "about": "Über"
+    "work": "Պորտֆոլիո",
+    "about": "Իմ մասին",
+    "contact": "Կապ",
+    "blog": "Բլոգ"
   },
   "page": {
     "home": {
-      "title": "Willkommen bei NextJs i18n",
-      "description": "Internationalisierung im NextJs 13 App-Router"
+      "title": "Բարև, ես Սևակն եմ:",
+      "description": "Ես ներկայումս Snap-ում եմ, որտեղ ես նախագծում եմ փորձառություններ Snapchat-ում AR ոսպնյակներ գտնելու և օգտագործելու շուրջ 👻",
+      "button" : "Իմ մասին"
     },
     "about": {
       "title": "Über uns",

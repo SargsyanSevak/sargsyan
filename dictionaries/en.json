@@ -1,12 +1,15 @@
 {
   "navigation": {
-    "home": "Home",
-    "about": "About"
+    "work": "Work",
+    "about": "About",
+    "contact": "Contact",
+    "blog": "Blog"
   },
   "page": {
     "home": {
-      "title": "Welcome to NextJs i18n",
-      "description": "Internationalization in NextJs 13 App router"
+      "title": "Hi, I'm Sevak.",
+      "description": "I'm currently at Snap, where I design experiences around finding and using AR Lenses on Snapchat 👻",
+      "button" : "About me"
     },
     "about": {
       "title": "About Us",

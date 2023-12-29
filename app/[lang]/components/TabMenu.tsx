@@ -4,23 +4,23 @@ import React from "react";
 import GsapMagnetic from "./Gsap";
 const menuItems = [
   {
-    title: "Work",
+    title: "work",
     href: "/work",
   },
   {
-    title: "About",
+    title: "about",
     href: "/about",
   },
   {
-    title: "Contact",
+    title: "contact",
     href: "/contact",
   },
   {
-    title: "Blog",
+    title: "blog",
     href: "/blog",
   },
 ];
-const MenuItems = ({ lang }: any) => {
+const MenuItems = ({ lang, navigation }: any) => {
   const pathname = usePathname();
   return (
     <ul className="flex justify-center items-center gap-4 w-full h-full py-6">
@@ -33,7 +33,7 @@ const MenuItems = ({ lang }: any) => {
                 : ""
             } py-[14px] px-6`}
           >
-            <Link href={`/${lang}${el.href}`}>{el.title}</Link>
+            <Link href={`/${lang}${el.href}`}>{navigation[el.title]}</Link>
           </li>
         </GsapMagnetic>
       ))}

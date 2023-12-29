@@ -6,7 +6,10 @@ import MenuItems from "./TabMenu";
 import Link from "next/link";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
-const Navbar = ({ lang }: any) => {
+import LocaleSwitcher from "./locale-switcher";
+import MobileNav from "./MobileNav";
+
+const Navbar = ({ lang, navigation }: any) => {
   const [openNav, setOpenNav] = useState(false);
 
   const toggleNav = () => {
@@ -23,7 +26,7 @@ const Navbar = ({ lang }: any) => {
       </Link>
 
       <div className="px-2 h-16 bg-[#EDEFF1] text-black dark:text-white dark:bg-[#133B5C] shadow-xl rounded-l-full rounded-r-full md:block hidden">
-        <MenuItems lang={lang} />
+        <MenuItems lang={lang} navigation={navigation} />
       </div>
       <div className="flex items-center gap-6">
         <GsapMagnetic>
@@ -31,20 +34,18 @@ const Navbar = ({ lang }: any) => {
             <Switcher />
           </div>
         </GsapMagnetic>
-        <GsapMagnetic>
+        {/* <GsapMagnetic>
           <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl">
             <LanguageSwitcher />
           </div>
-        </GsapMagnetic>
+        </GsapMagnetic> */}
         <div className="md:hidden block relative">
           <GsapMagnetic>
             <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl flex justify-center items-center">
               <Hamburger toggled={openNav} toggle={toggleNav} color="orange" />
             </div>
           </GsapMagnetic>
-          {openNav && (
-            <div className="absolute top-20 right-0 w-[300px] h-44 bg-white shadow-2xl rounded-[24px]"></div>
-          )}
+          {openNav && <MobileNav lang={lang} navigation={navigation} />}
         </div>
       </div>
     </div>
