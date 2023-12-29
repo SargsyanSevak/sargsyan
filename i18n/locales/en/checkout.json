@@ -1,0 +1,22 @@
+{
+    "Pay" : "Pay",
+    "Checkout" : "Checkout",
+    "Payment details" : "Payment details",
+    "Card payment" : "Card payment",
+    "Enter cardholder name" : "Enter cardholder name",
+    "Enter card number" : "Enter card number",
+    "Select date" : "MM/YYYY",
+    "Personal information" : "Personal Information",
+    "First name" : "First name",
+    "Last name" : "Last name",
+    "Email address" : "Email address",
+    "Phone number" : "Phone number",
+    "Enter here" : "Enter here",
+    "City" : "City",
+    "Address line" : "Address line",
+    "About the order" : "About the order",
+    "Total notes" : "Total notes",
+    "Total price:" : "Total Price:",
+    "Including taxes & fees" : "Including taxes & fees",
+    "Cancel" : "Cancel"
+}

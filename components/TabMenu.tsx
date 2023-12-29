@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { useParams, usePathname } from "next/navigation";
 import React from "react";
 import GsapMagnetic from "./Gsap";
 const menuItems = [
@@ -22,6 +22,7 @@ const menuItems = [
 ];
 const MenuItems = () => {
   const pathname = usePathname();
+  const { lng } = useParams();
   return (
     <ul className="flex justify-center items-center gap-4 w-full h-full py-6">
       {menuItems.map((el: any) => (
@@ -33,7 +34,7 @@ const MenuItems = () => {
                 : ""
             } py-[14px] px-6`}
           >
-            <Link href={el.href}>{el.title}</Link>
+            <Link href={`/${lng}${el.href}`}>{el.title}</Link>
           </li>
         </GsapMagnetic>
       ))}

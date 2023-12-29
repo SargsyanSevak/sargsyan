@@ -1,0 +1,20 @@
+{
+  "Name, Surname": "Имя, Фамилия",
+  "Email": "Эл. адрес",
+  "Phone": "Телефон",
+  "Enter here": "Напишите здесь",
+  "Select": "Выбирать",
+  "Enter phone number": "Enter phone number",
+  "Subject": "Предмет",
+  "Message": "Сообщение",
+  "Send Message": "Отправить",
+  "Header text": "Пожалуйста, используйте форму ниже, чтобы отправить нам сообщение",
+  "Name, Surname are missing": "Имя, фамилия отсутствуют",
+  "Phone number is missing": "Номер телефона отсутствует",
+  "Message subject is missing": "Предмет сообщения отсутствует",
+  "E-mail is invalid": "Эл. адрес недействителен",
+  "E-mail is missing": "Эл. адрес отсутствует",
+  "Message text is missing": "Текст сообщения отсутствует",
+  "The message must contain a maximum of 3000 characters": "Сообщение должно содержать максимум 3000 символов.",
+  "The field should contain at least 2 characters" : "Поле должно содержать минимум 2 символа"
+}

@@ -1,0 +1,16 @@
+{
+    "Log in" : "Մուտք",
+    "Log into account" : "Մուտք գործեք հաշիվ",
+    "Email address" : "Էլ. հասցե",
+    "Enter email address" : "Մուտքագրեք էլ. հասցեն",
+    "Password" : "Գաղտնաբառ",
+    "Enter password" : "Մուտքագրեք գաղտնաբառը",
+    "Remember me" : "Հիշել",
+    "Create an account" : "Ստեղծել հաշիվ",
+    "OR" : "ԿԱՄ",
+    "E-mail is missing" : "Էլ. հասցեն բացակայում է",
+    "Password is missing" : "Գաղտնաբառը բացակայում է",
+    "E-mail is invalid" : "Էլ. հասցեն անվավեր է",
+    "Please check your email for confirmation" : "Խնդրում ենք ստուգել ձեր էլ.փոստը հաստատման համար",
+    "Access denied: wrong username or password." : "Մուտքը մերժված է: Սխալ օգտանուն կամ գաղտնաբառ"
+}

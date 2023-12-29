@@ -1,0 +1,21 @@
+{
+  "Send request": "Հարցում ուղարկել",
+  "Make order": "Կատարեք պատվեր",
+  "First name": "Անուն",
+  "Last name": "Ազգանուն",
+  "Email": "էլ. հասցե",
+  "Phone": "Հեռախոս",
+  "Message": "Հաղորդագրություն",
+  "Enter here": "Մուտքագրեք այստեղ",
+  "Cancel": "Չեղարկել",
+  "Send order request": "Ուղարկել պատվերի հարցում",
+  "Name is missing": "Անունը բացակայում է",
+  "Surname is missing": "Ազգանունը բացակայում է",
+  "Phone number is missing": "Հեռախոսահամարը բացակայում է",
+  "E-mail is invalid": "Էլ. հասցեն անվավեր է",
+  "E-mail is missing": "Էլ. հասցեն բացակայում է",
+  "Message text is missing": "Հաղորդագրության տեքստը բացակայում է",
+  "The message must contain a maximum of 3000 characters": "Հաղորդագրությունը պետք է պարունակի մաքսմիում 3000 տառ",
+  "The field should contain at least 2 characters" : "Դաշտը պետք է պարունակի առնվազն 2 նիշ"
+
+}

@@ -1,9 +1,12 @@
+"use client";
 import Link from "next/link";
 import YoutubeEmbed from "./YouTubeEmbed";
+import { useParams } from "next/navigation";
 
 const BlogCard = ({ post }: any) => {
+  const { lng } = useParams();
   return (
-    <Link href={`/blog/${post.id}`}>
+    <Link href={`/${lng}/blog/${post.id}`}>
       <article
         key={post.id}
         className="flex max-w-full flex-col items-start justify-between shadow-xl hover:shadow-2xl p-4 rounded-xl transition-all duration-300 hover:bg-[#EDEFF1] dark:bg-[#133B5C] dark:hover:bg-[#1E5F74]"

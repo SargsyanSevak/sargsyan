@@ -1,0 +1,20 @@
+{
+    "Send request" : "Send request",
+    "Make order" : "Make order",
+    "First name" : "First name",
+    "Last name" : "Last name",
+    "Email" : "Email address",
+    "Phone" : "Phone",
+    "Message" : "Message",
+    "Enter here" : "Enter here",
+    "Cancel" : "Cancel",
+    "Send order request" : "Send order request",
+    "Name is missing" : "Name is missing",
+    "Surname is missing" : "Surname is missing",
+    "Phone number is missing" : "Phone number is missing",
+    "E-mail is invalid" : "E-mail is invalid",
+    "E-mail is missing" : "E-mail is missing",
+    "Message text is missing" : "Message text is missing",
+    "The message must contain a maximum of 3000 characters" : "The message must contain a maximum of 3000 characters",
+    "The field should contain at least 2 characters" : "The field should contain at least 2 characters"
+}

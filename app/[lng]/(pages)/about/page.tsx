@@ -7,7 +7,7 @@ import {
   SiTypescript,
   SiRedux,
 } from "react-icons/si";
-import GsapMagnetic from "../../components/Gsap";
+import GsapMagnetic from "../../../../components/Gsap";
 const skills = [
   {
     title: "HTML",

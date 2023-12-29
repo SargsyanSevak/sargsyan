@@ -1,0 +1,22 @@
+{
+    "Pay" : "Платить",
+    "Checkout" : "Касса",
+    "Payment details" : "Детали оплаты",
+    "Card payment" : "Оплата картой",
+    "Enter cardholder name" : "Введите имя владельца карты",
+    "Enter card number" : "Введите номер карты",
+    "Select date" : "MM/YYYY",
+    "Personal information" : "Персональная информация",
+    "First name" : "Имя",
+    "Last name" : "Фамилия",
+    "Email address" : "Адрес эл. почты",
+    "Phone number" : "Номер телефона",
+    "Enter here" : "Пишите здесь",
+    "City" : "Город",
+    "Address line" : "Адресная строка",
+    "About the order" : "О заказе",
+    "Total notes" : "Примечания",
+    "Total price:" : "Итоговая цена:",
+    "Including taxes & fees" : "Включая налоги и сборы",
+    "Cancel" : "Отмена"
+}

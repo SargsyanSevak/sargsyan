@@ -1,7 +1,7 @@
 "use client";
 import Card from "@/components/Card";
 import { useState } from "react";
-import GsapMagnetic from "../../components/Gsap";
+import GsapMagnetic from "../../../../components/Gsap";
 
 const Work = () => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];

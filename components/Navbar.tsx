@@ -6,15 +6,16 @@ import MenuItems from "./TabMenu";
 import Link from "next/link";
 import { useState } from "react";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useParams } from "next/navigation";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
-
+  const { lng } = useParams();
   const toggleNav = () => {
     setOpenNav((cur) => !cur);
   };
   return (
     <div className="w-full h-20 rounded-lg mt-6 flex justify-between items-center px-4 sticky top-4 right-0 left-0 z-50">
-      <Link href="/">
+      <Link href={`/${lng}/`}>
         <GsapMagnetic>
           <div className="w-16 h-16 border-[0.5px] dark:border-0  rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl  flex justify-center items-center cursor-pointer">
             <img src="/main-logo.png" alt="logo" className="-mt-2 w-12 h-12" />

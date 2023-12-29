@@ -3,6 +3,11 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { siteMetadata } from "@/utils/siteMetaData";
+import { languages } from "../../../i18n/settings";
+import { dir } from "i18next";
+export async function generateStaticParams() {
+  return languages.map((lng) => ({ lng }));
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
@@ -54,13 +59,9 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children, params: { lng } }: any) {
   return (
-    <html lang="en">
+    <html lang={lng} dir={dir(lng)}>
       <body className="bg-[#f6f6f6] dark:bg-[#1D2D50]">
         <main className="max-w-[1280px] min-h-screen mx-auto border-l-[1px] border-r-[1px] relative">
           <Navbar />

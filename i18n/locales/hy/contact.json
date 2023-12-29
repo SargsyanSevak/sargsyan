@@ -1,0 +1,20 @@
+{
+  "Name, Surname": "Անուն, ազգանուն",
+  "Email": "էլ. հասցե",
+  "Phone": "Հեռախոս",
+  "Enter here": "Մուտքագրեք այստեղ",
+  "Select": "Ընտրել",
+  "Enter phone number": "Մուտքագրեք հեռախոսահամարը",
+  "Subject": "Վերնագիր",
+  "Message": "Հաղորդագրություն",
+  "Send Message": "Ուղարկել",
+  "Header text": "Լրացնելով ներկայացված տվյալները՝ ուղարկեք Ձեր հաղորդագրությունը",
+  "Name, Surname are missing": "Անուն, ազգանունը բացակայում է",
+  "Phone number is missing": "Հեռախոսահամարը բացակայում է",
+  "Message subject is missing": "Հաղորդագրության վերնագիրը բացակայում է",
+  "E-mail is invalid": "Էլ. հասցեն անվավեր է",
+  "E-mail is missing": "Էլ. հասցեն բացակայում է",
+  "Message text is missing": "Հաղորդագրության տեքստը բացակայում է",
+  "The message must contain a maximum of 3000 characters": "Հաղորդագրությունը պետք է պարունակի մաքսմիում 3000 տառ",
+  "The field should contain at least 2 characters" : "Դաշտը պետք է պարունակի առնվազն 2 նիշ"
+}
