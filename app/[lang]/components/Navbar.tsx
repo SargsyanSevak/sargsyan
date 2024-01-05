@@ -29,7 +29,7 @@ const Navbar = ({ lang, navigation }: any) => {
         </GsapMagnetic>
       </Link>
 
-      <div className="px-2 h-16 bg-[#EDEFF1] text-black dark:text-white dark:bg-[#133B5C] shadow-xl rounded-l-full rounded-r-full md:block hidden">
+      <div className="px-2 h-16 bg-[#EDEFF1] text-black dark:text-white dark:bg-[#133B5C] shadow-xl rounded-l-full rounded-r-full lg:block hidden -mr-[140px]">
         <MenuItems lang={lang} navigation={navigation} />
       </div>
       <div className="flex items-center gap-6">
@@ -38,7 +38,7 @@ const Navbar = ({ lang, navigation }: any) => {
             <Switcher />
           </div>
         </GsapMagnetic>
-        <div className="md:block hidden">
+        <div className="lg:block hidden">
           <div
             className="px-6 h-12 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl flex justify-center items-center gap-4 cursor-pointer"
             onClick={toggleDropDown}
@@ -55,7 +55,7 @@ const Navbar = ({ lang, navigation }: any) => {
           </div>
         </div>
 
-        <div className="md:hidden block relative">
+        <div className="lg:hidden block relative">
           <GsapMagnetic>
             <div className="w-16 h-16 border-[0.5px] dark:border-0 rounded-full bg-[#f1f3f4] dark:bg-[#133B5C] shadow-2xl flex justify-center items-center">
               <Hamburger toggled={openNav} toggle={toggleNav} color="orange" />

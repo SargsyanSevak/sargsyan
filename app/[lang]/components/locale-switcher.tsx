@@ -34,10 +34,10 @@ export default function LocaleSwitcher({
               className={` ${
                 desktopView
                   ? "bg-inherit text-black dark:text-white border-none hover:bg-gray-100 dark:hover:bg-[#1E5F74]  transition-all"
-                  : "bg-gray-600 text-white border"
+                  : " text-white border"
               } rounded-md   px-6 uppercase py-2 ${
                 locale === lang
-                  ? "bg-gray-200 dark:bg-[#1E5F74] dark:hover:bg-[#1E5F74]"
+                  ? "bg-gray-300 hover:bg-gray-300 dark:bg-[#1E5F74] dark:hover:bg-[#1E5F74]"
                   : ""
               }`}
             >

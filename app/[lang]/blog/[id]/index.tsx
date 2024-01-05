@@ -22,7 +22,7 @@ const BlogDetails = () => {
 
   return (
     <article className="px-6 md:py-20 py-[64px]">
-      <h1 className="md:text-[40px] sm:text-[32px] text-[24px] font-bold text-center dark:text-white max-w-[1000px] mx-auto">
+      <h1 className="md:text-[40px] sm:text-[32px] md:text-center text-normal text-[24px] font-bold  dark:text-white max-w-[1000px] mx-auto">
         {post.title}
       </h1>
       <div className="flex justify-between items-center w-full h-fit mt-10 flex-wrap max-w-[900px] mx-auto">
@@ -48,7 +48,7 @@ const BlogDetails = () => {
             alt=""
             className="h-20 w-20 rounded-full bg-gray-50"
           />
-          <div className="text-sm leading-6">
+          <div className="text-sm leading-6 mt-4">
             <div className="font-semibold text-gray-900 dark:text-gray-300 w-full">
               <div className="w-full flex justify-center items-center">
                 <span className="absolute inset-0 text-center mx-auto" />
