@@ -5,6 +5,9 @@ import Footer from "@/app/[lang]/components/Footer";
 import { siteMetadata } from "@/utils/siteMetaData";
 import { Locale, i18n } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
+import { ThemeProvider } from "./components/ThemeProviderWrapper";
+import Head from "next/head";
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteMetadata.siteUrl),
   title: {
@@ -69,13 +72,15 @@ export default async function RootLayout({
   const { navigation } = await getDictionary(params.lang);
   const { footer } = await getDictionary(params.lang);
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} suppressHydrationWarning>
       <body className="bg-[#f6f6f6] dark:bg-[#1D2D50]">
-        <main className="max-w-[1280px] min-h-screen mx-auto border-l-[1px] border-r-[1px] relative">
-          <Navbar lang={params.lang} navigation={navigation} />
-          {children}
-        </main>
-        <Footer lang={params.lang} footer={footer} />
+        <ThemeProvider attribute="class">
+          <main className="max-w-[1280px] min-h-screen mx-auto border-l-[1px] border-r-[1px] relative">
+            <Navbar lang={params.lang} navigation={navigation} />
+            {children}
+          </main>
+          <Footer lang={params.lang} footer={footer} />
+        </ThemeProvider>
       </body>
     </html>
   );
