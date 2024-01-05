@@ -97,7 +97,7 @@ function ThemeToggle() {
         setTheme(theme === "light" ? "dark" : "light");
       }}
     >
-      {currentMode === "dark" ? <HiOutlineMoon /> : <FiSun />}
+      {currentMode || theme === "dark" ? <HiOutlineMoon /> : <FiSun />}
     </button>
   );
 }
