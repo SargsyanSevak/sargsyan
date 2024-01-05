@@ -20,9 +20,9 @@ function ThemeToggle() {
       }}
     >
       {currentMode === "dark" ? (
-        <HiOutlineMoon />
-      ) : currentMode === "light" ? (
         <FiSun />
+      ) : currentMode === "light" ? (
+        <HiOutlineMoon />
       ) : null}
     </button>
   );
