@@ -12,8 +12,47 @@
       "button" : "About me"
     },
     "about": {
+      "title": "HEY! NICE TO MEET YOU 👋",
+      "description": "I’m a product designer living in Brooklyn, interested in how people and software can work together to make life better. I'm currently at Snap, where I design experiences around finding and using AR Lenses on Snapchat. I previously worked at ZipRecruiter, where I designed experiences and interfaces to help millions of people get jobs.I started on the marketing design side, honing my visual design skills and learning the ins and outs of keyframe animation, then moved into the world of product. As a designer, I enjoy being a generalist with a focus on craft and prototyping. I value beautiful visuals backed by smart systems thinking."
+    },
+    "contact": {
+      "title": "Contact me",
+      "description": "Let’s Connect: Reach Out and Say Hello!",
+      "button" : "Let’s talk",
+      "name" : "What’s your name ?",
+      "lastName" : "What’s your last name ?",
+      "email" : "What’s your email ?",
+      "message" : "Your message",
+      "messagePlaceholder" : "Hello! I would like to get in touch.",
+      "Name is missing" : "Name is missing",
+      "The field should contain at least 2 characters" : "The field should contain at least 2 characters",
+      "Surname is missing" : "Surname is missing",
+      "E-mail is invalid":"E-mail is invalid",
+      "E-mail is missing":"E-mail is missing",
+      "Message text is missing" : "Message text is missing",
+      "The message must contain a maximum of 3000 characters":"The message must contain a maximum of 3000 characters",
+      "success" : "Your message has been sent. Thank you.",
+      "error" : "Sorry, there was an error sending your message. Please try againlater."
+    },
+    "blog": {
       "title": "About Us",
       "description": "This is the about page"
+    },
+    "portfolio": {
+      "title": "About Us",
+      "description": "This is the about page",
+      "Load more" : "Load more"
+    },
+    "portfolioCard": {
+      "title" : "",
+      "button": "Demo & code",
+      "description": "This is the about page"
     }
+   
+  },
+  "footer": {
+    "copyright" : "Copyright ©",
+    "author" : "Sevak Sargsyan.",
+    "rights" : "All rights reserved."
   }
 }

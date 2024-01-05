@@ -52,19 +52,19 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <div className="pb-20 md:pt-40 pt-28 flex md:flex-row flex-col  justify-center items-center gap-10 text-center p-4">
-        <div className="flex justify-center items-center md:w-[30%] w-[60%]">
+      <div className="pb-20 md:pt-40 pt-28 flex flex-col  justify-center items-center gap-10 text-center p-4">
+        <p className="text-[40px] text-center md:text-[60px] font-extrabold py-4 leading-tight block dark:text-white">
+          HEY! NICE TO MEET YOU 👋
+        </p>
+        <div className="flex justify-center items-center w-full max-w-[900px] ">
           <img
-            src="https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1703721600&semt=ais"
+            src="/my_photo.jpg"
             alt="me"
-            className="rounded-[24px]"
+            className="rounded-[24px] shadow-2xl"
           />
         </div>
         <div className="md:w-[70%] w-full">
-          <p className="text-2xl text-justify md:text-4xl font-extrabold py-4 leading-tight block dark:text-white">
-            HEY! NICE TO MEET YOU 👋
-          </p>
-          <p className="md:text-[20px] text-[16px] text-justify dark:text-white text-gray-500 font-thin">
+          <p className="md:text-[20px] text-[16px] text-justify dark:text-white text-gray-500 font-thin mt-6">
             I’m a product designer living in Brooklyn, interested in how people
             and software can work together to make life better. I'm currently at
             Snap, where I design experiences around finding and using AR Lenses
@@ -79,10 +79,10 @@ const page = () => {
           </p>
         </div>
       </div>
-      <div className="w-full flex flex-wrap justify-around gap-6 md:gap-10 pb-20 dark:text-white px-4">
+      <div className="w-full flex flex-wrap justify-around gap-6 md:gap-10 pb-20 dark:text-white  px-4">
         {skills.map((el) => (
           <GsapMagnetic key={el.title}>
-            <div className="skill h-16 w-36 md:w-48  rounded-2xl bg-gray-100 shadow-md border-[0.2px] dark:bg-[#133B5C] flex justify-center items-center  gap-2 hover:bg-[#f1f1f1]">
+            <div className="skill h-16 w-36 md:w-48  rounded-2xl bg-gray-100 shadow-md border-[0.2px] dark:bg-[#133B5C] dark:hover:bg-[#1E5F74] flex justify-center items-center  gap-2 hover:bg-[#f1f1f1]">
               <span>{el.icon}</span> {el.title}{" "}
             </div>
           </GsapMagnetic>

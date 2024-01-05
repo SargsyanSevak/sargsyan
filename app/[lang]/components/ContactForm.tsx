@@ -12,7 +12,13 @@ interface FormValues {
   email: string;
   message: string;
 }
-export default function ContactForm() {
+export default function ContactForm({
+  lang,
+  contact,
+}: {
+  lang: any;
+  contact: any;
+}) {
   const ref = useRef<any>(null);
   const {
     register,
@@ -34,13 +40,11 @@ export default function ContactForm() {
           "7juDdm_vDM8bVfl97"
         )
         .then(() => {
-          toast("Your message has been sent. Thank you.");
+          toast(contact.success);
           reset();
         });
     } else {
-      toast(
-        "Sorry, there was an error sending your message. Please try againlater."
-      );
+      toast(contact.error);
     }
   };
 
@@ -83,10 +87,10 @@ export default function ContactForm() {
       </div>
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl dark:text-white">
-          Contact me
+          {contact.title}
         </h2>
         <p className="mt-2 text-lg leading-8 text-gray-600 dark:text-gray-300">
-          Let’s Connect: Reach Out and Say Hello!
+          {contact.description}
         </p>
       </div>
       <form
@@ -98,7 +102,7 @@ export default function ContactForm() {
         <div className="flex flex-col gap-y-6 ">
           <div className="border-t border-gray-200 pt-4 contact-form">
             <label className="font-medium text-gray-900 dark:text-white pl-0 md:pl-6 text-lg tracking-wide	">
-              What’s your name ?
+              {contact.name}
             </label>
             <div className="mt-2 text-sm text-gray-500 ">
               <input
@@ -109,14 +113,14 @@ export default function ContactForm() {
               />
               {errors.name && (
                 <p className="text-red-600 font-medium  pl-0 md:pl-6 text-md tracking-wide">
-                  {errors.name.message}
+                  {errors.name.message && contact[errors.name.message]}
                 </p>
               )}
             </div>
           </div>
           <div className="border-t border-gray-200 pt-4 contact-form">
             <label className="font-medium text-gray-900 dark:text-white pl-0 md:pl-6 text-lg tracking-wide	">
-              What’s your last name ?
+              {contact.lastName}
             </label>
             <div className="mt-2 text-sm text-gray-500 ">
               <input
@@ -127,14 +131,14 @@ export default function ContactForm() {
               />
               {errors.lastName && (
                 <p className="text-red-600 font-medium  pl-0 md:pl-6 text-md tracking-wide">
-                  {errors.lastName.message}
+                  {errors.lastName.message && contact[errors.lastName.message]}
                 </p>
               )}
             </div>
           </div>
           <div className="border-t border-gray-200 pt-4 contact-form">
             <label className="font-medium text-gray-900 dark:text-white pl-0 md:pl-6 text-lg tracking-wide	">
-              What’s your email ?
+              {contact.email}
             </label>
             <div className="mt-2 text-sm text-gray-500 bg-inherit">
               <input
@@ -145,7 +149,7 @@ export default function ContactForm() {
               />
               {errors.email && (
                 <p className="text-red-600 font-medium  pl-0 md:pl-6 text-md tracking-wide">
-                  {errors.email.message}
+                  {errors.email.message && contact[errors.email.message]}
                 </p>
               )}
             </div>
@@ -153,17 +157,17 @@ export default function ContactForm() {
 
           <div className="border-t border-gray-200 pt-4 contact-form">
             <label className="font-medium text-gray-900 dark:text-white pl-0 md:pl-6 text-lg tracking-wide	">
-              Your message
+              {contact.message}
             </label>
             <div className="mt-2 text-sm text-gray-500 ">
               <textarea
-                placeholder="Hello! I would like to get in touch. *"
+                placeholder={contact.messagePlaceholder}
                 className="pl-0 md:pl-6 w-full min-h-20 outline-none border-none text-lg bg-inherit dark:text-gray-200"
                 {...register("message")}
               />
               {errors.message && (
                 <p className="text-red-600 font-medium  pl-0 md:pl-6 text-md tracking-wide">
-                  {errors.message.message}
+                  {errors.message.message && contact[errors.message.message]}
                 </p>
               )}
             </div>
@@ -174,7 +178,7 @@ export default function ContactForm() {
             className="rounded-[24px] w-full bg-[#EDEFF1] border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] dark:hover:bg-[#1E5F74]  dark:text-white transition-colors duration-300 text-[20px] flex justify-center items-center gap-2"
             onClick={handleSubmit(onSubmit)}
           >
-            Let's talk
+            {contact.button}
           </button>
         </div>
       </form>

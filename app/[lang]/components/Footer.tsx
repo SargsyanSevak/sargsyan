@@ -4,9 +4,9 @@ import { FaWhatsapp } from "react-icons/fa";
 import GsapMagnetic from "./Gsap";
 import FramerMagnetic from "./Framer";
 
-const Footer = () => {
+const Footer = ({ lang, footer }: { lang: string; footer: any }) => {
   return (
-    <div className="w-full sm:h-[200px] h-[160px] bg-[#EDEFF1] dark:bg-[#133B5C] rounded-s-[24px] rounded-e-[24px]">
+    <div className="w-full sm:h-[200px] h-[160px] bg-[#EDEFF1] dark:bg-[#133B5C] rounded-tl-[24px] rounded-tr-[24px]">
       <footer className="max-w-[1280px] px-4 h-full mx-auto flex flex-col justify-evenly items-center">
         <div className="icons flex items-center sm:text-[50px] text-[38px] text-gray-500 dark:text-white sm:gap-20 gap-14">
           <GsapMagnetic>
@@ -25,9 +25,12 @@ const Footer = () => {
             </a>
           </GsapMagnetic>
         </div>
-        <p className="text-gray-600 dark:text-white sm:text-[18px] text-[14px] text-center">
-          Copyright © 2023 Sevak Sargsyan. All rights reserved.
-        </p>
+        <div className="text-gray-600 dark:text-white sm:text-[18px] text-[14px] text-center flex justify-center items-center flex-wrap gap-2">
+          <span> {footer.copyright}</span>{" "}
+          <span>{new Date().getFullYear()}</span>
+          <span>{footer.author}</span>
+          <span>{footer.rights}</span>
+        </div>
       </footer>
     </div>
   );

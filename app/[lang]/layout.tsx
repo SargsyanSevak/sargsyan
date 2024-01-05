@@ -67,6 +67,7 @@ export default async function RootLayout({
   params: { lang: Locale };
 }) {
   const { navigation } = await getDictionary(params.lang);
+  const { footer } = await getDictionary(params.lang);
   return (
     <html lang={params.lang}>
       <body className="bg-[#f6f6f6] dark:bg-[#1D2D50]">
@@ -74,7 +75,7 @@ export default async function RootLayout({
           <Navbar lang={params.lang} navigation={navigation} />
           {children}
         </main>
-        <Footer />
+        <Footer lang={params.lang} footer={footer} />
       </body>
     </html>
   );

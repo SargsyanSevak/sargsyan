@@ -3,7 +3,7 @@ import Card from "@/app/[lang]/components/Card";
 import { useState } from "react";
 import GsapMagnetic from "../components/Gsap";
 
-const Work = () => {
+const Work = ({ lang, portfolio }: { lang: string; portfolio: any }) => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const itemsPerRow = 6;
   const [next, setNext] = useState(itemsPerRow);
@@ -26,7 +26,7 @@ const Work = () => {
               className="rounded-[24px] text-gray-600 dark:text-gray-100 border-[1px] py-4 px-10 hover:bg-gray-100 dark:bg-[#133B5C] transition-colors duration-300 text-[20px] flex items-center gap-4"
               onClick={handleMoreWorks}
             >
-              Load more
+              {portfolio["Load more"]}
             </button>
           </GsapMagnetic>
         </div>
