@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MdArrowOutward } from "react-icons/md";
 const Hero = ({ lang, page }: any) => {
   return (
-    <div className="flex flex-col justify-center items-center gap-6 dark:text-white">
+    <div className="flex flex-col justify-center items-center gap-6 dark:text-white md:min-h-[86vh] min-h-[86vh]">
       <h1 className="sm:text-[70px] text-[44px] font-extrabold text-center">
         {page.home.title}
       </h1>

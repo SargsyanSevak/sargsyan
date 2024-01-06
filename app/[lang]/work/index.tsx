@@ -3,6 +3,7 @@ import Card from "@/app/[lang]/components/Card";
 import { useState } from "react";
 import GsapMagnetic from "../components/Gsap";
 import { portfolios } from "@/portfolios";
+import BackInUp from "../components/BackInUp";
 const Work = ({ lang, portfolio }: { lang: string; portfolio: any }) => {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const itemsPerRow = 6;
@@ -12,7 +13,7 @@ const Work = ({ lang, portfolio }: { lang: string; portfolio: any }) => {
   };
   return (
     <>
-      <div className="md:py-20 py-16 px-4 flex justify-center items-center">
+      <div className="md:pt-40 pt-16 pb-20 px-4 flex justify-center items-center">
         <div className="w-full h-fit flex flex-col md:gap-[120px] gap-[40px]">
           {portfolios.slice(0, next)?.map((el, i) => (
             <Card key={el.id} data={el} />

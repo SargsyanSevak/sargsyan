@@ -8,6 +8,7 @@ import {
   SiRedux,
 } from "react-icons/si";
 import GsapMagnetic from "../components/Gsap";
+import BackInUp from "../components/BackInUp";
 const skills = [
   {
     title: "HTML",
@@ -51,8 +52,8 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <>
-      <div className="pb-20 md:pt-40 pt-28 flex flex-col  justify-center items-center gap-10 text-center p-4">
+    <BackInUp>
+      <div className="pb-20 md:pt-[130px] pt-20 flex flex-col  justify-center items-center gap-10 text-center p-4">
         <p className="text-[40px] text-center md:text-[60px] font-extrabold py-4 leading-tight block dark:text-white">
           HEY! NICE TO MEET YOU 👋
         </p>
@@ -88,7 +89,7 @@ const page = () => {
           </GsapMagnetic>
         ))}
       </div>
-    </>
+    </BackInUp>
   );
 };
 

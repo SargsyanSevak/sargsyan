@@ -15,7 +15,7 @@ export default async function Home({
 }) {
   const { page } = await getDictionary(lang);
   return (
-    <main className="flex flex-col items-center justify-between px-4 py-20">
+    <main className="flex flex-col items-center justify-between px-4 pb-20">
       <Hero lang={lang} page={page} />
       <div className="w-full h-fit md:mt-[120px] mt-[60px] flex flex-col md:gap-[120px] gap-[40px]">
         {portfolios.slice(0, 4).map((el) => (
