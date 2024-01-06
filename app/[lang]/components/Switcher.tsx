@@ -1,16 +1,17 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useState } from "react";
 import { FiSun } from "react-icons/fi";
 import { HiOutlineMoon } from "react-icons/hi";
 
 function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [currentMode, setCurrentMode] = useState("light");
-  useEffect(() => {
+
+  useLayoutEffect(() => {
     setCurrentMode(window.localStorage.getItem("theme") || "light");
-  }, [currentMode, theme]);
+  }, [theme]);
 
   return (
     <button
