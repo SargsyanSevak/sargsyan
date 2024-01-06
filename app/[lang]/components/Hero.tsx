@@ -5,7 +5,7 @@ import { MdArrowOutward } from "react-icons/md";
 const Hero = ({ lang, page }: any) => {
   return (
     <div className="flex flex-col justify-center items-center gap-6 dark:text-white">
-      <h1 className="sm:text-[70px] text-[44px] font-extrabold">
+      <h1 className="sm:text-[70px] text-[44px] font-extrabold text-center">
         {page.home.title}
       </h1>
       <p className="sm:text-[20px] text-[16px] md:w-[60%] w-full text-center">

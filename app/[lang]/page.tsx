@@ -4,7 +4,7 @@ import Hero from "@/app/[lang]/components/Hero";
 import { Metadata } from "next";
 import { Locale } from "@/i18n.config";
 import { getDictionary } from "@/lib/dictionary";
-
+import { portfolios } from "@/portfolios";
 export const metadata: Metadata = {
   title: "Sevak Sargsyan",
 };
@@ -18,8 +18,8 @@ export default async function Home({
     <main className="flex flex-col items-center justify-between px-4 py-20">
       <Hero lang={lang} page={page} />
       <div className="w-full h-fit md:mt-[120px] mt-[60px] flex flex-col md:gap-[120px] gap-[40px]">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <Card key={i} />
+        {portfolios.slice(0, 4).map((el) => (
+          <Card key={el.id} data={el} />
         ))}
       </div>
       <div>
