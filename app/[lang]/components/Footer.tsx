@@ -9,7 +9,7 @@ const NUMBER = "+380966695103".replace(/[^\w\s]/gi, "").replace(/ /g, "");
 
 const Footer = ({ lang, footer }: { lang: string; footer: any }) => {
   let url = `${URL}/${NUMBER}`;
-  let message = "Helooo";
+  let message = "Hi 👋 ";
   if (message) {
     url += `?text=${encodeURI(message)}`;
   }
