@@ -1,7 +1,7 @@
 
 export const posts = [
     {
-      id: 1,
+      id: 4,
       title: "Blur Placeholder Images with Next.js and Tailwind CSS",
       href: "#",
       description:
@@ -58,7 +58,7 @@ export const posts = [
       },
     },
     {
-      id: 4,
+      id: 1,
       title: "Awesome Text Hover Animation Using HTML & CSS",
       href: "#",
       description:
@@ -68,6 +68,44 @@ export const posts = [
       category: { title: "Web Development", href: "#" },
       embedId:"JCFd3dVGIhc",
       ogImage:'/3.jpeg',
+      author: {
+        name: "Sevak Sargsyan",
+        role: "Front-end developer",
+        href: "#",
+        imageUrl:
+        "/profileImage.jpg",
+      },
+    },
+    {
+      id: 5,
+      title: "How to Create a Loading Skeleton in Next.js with Tailwind CSS",
+      href: "#",
+      description:
+        "Elevate your UI development game with our latest tutorial on creating a sleek loading skeleton in Next.js using the power of Tailwind CSS! 🎨 In this step-by-step guide, we'll walk you through the seamless integration of Next.js and Tailwind CSS to craft a smooth and visually appealing loading experience for your web applications.",
+      date: "Feb 10, 2024",
+      datetime: "10.02.2024",
+      category: { title: "Web Development", href: "#" },
+      embedId:"E6CjoMmNxWs",
+      ogImage:'/loading-skeleton.jpeg',
+      author: {
+        name: "Sevak Sargsyan",
+        role: "Front-end developer",
+        href: "#",
+        imageUrl:
+        "/profileImage.jpg",
+      },
+    },
+    {
+      id: 5,
+      title: "Creating a Dynamic Radial Gradient Effect with Next.js | Mouse Tracking Tutorial",
+      href: "#",
+      description:
+        "Embark on a journey of creativity with our Next.js tutorial! Join us as we unveil the secrets to crafting a mesmerizing Dynamic Radial Gradient Effect coupled with innovative mouse tracking techniques. Elevate your web design game, captivate your audience, and unlock the potential of interactive user experiences. Dive into this tutorial to seamlessly integrate dynamic gradients into your Next.js projects. Subscribe now and transform your coding prowess into captivating visual masterpieces!",
+      date: "Feb 11, 2024",
+      datetime: "11.02.2024",
+      category: { title: "Web Development", href: "#" },
+      embedId:"arq5x5mRSpY",
+      ogImage:'/radial-gradient.jpeg',
       author: {
         name: "Sevak Sargsyan",
         role: "Front-end developer",
