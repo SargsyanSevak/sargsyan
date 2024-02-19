@@ -2,6 +2,25 @@
 export const posts = [
     {
       id: 1,
+      title: "Blur Placeholder Images with Next.js and Tailwind CSS",
+      href: "#",
+      description:
+        "In this tutorial, we dive into the world of web development as we explore how to add a stylish blur effect to placeholder images using Next.js and Tailwind CSS. Enhance the visual appeal of your web projects by following along with our step-by-step guide.",
+      date: "Feb 7, 2024",
+      datetime: "07.02.2024",
+      category: { title: "Web Development", href: "#" },
+      embedId:"Iqb52cj7WbU",
+      ogImage:'/placeholder-with-taiwind.jpeg',
+      author: {
+        name: "Sevak Sargsyan",
+        role: "Front-end developer",
+        href: "#",
+        imageUrl:
+        "/profileImage.jpg",
+      },
+    },
+    {
+      id: 2,
       title: "Creating Custom Cool Cursor with Next.js and GSAP | Interactive Web Design Tutorial",
       href: "#",
       description:
@@ -20,7 +39,7 @@ export const posts = [
       },
     },
     {
-      id: 2,
+      id: 3,
       title: "Creating a Cool Draggable Button with Next.js, TypeScript, Framer Motion and Tailwind",
       href: "#",
       description:
@@ -39,7 +58,7 @@ export const posts = [
       },
     },
     {
-      id: 3,
+      id: 4,
       title: "Awesome Text Hover Animation Using HTML & CSS",
       href: "#",
       description:

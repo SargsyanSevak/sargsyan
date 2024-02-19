@@ -75,7 +75,7 @@ export default async function RootLayout({
     <html lang={params.lang} suppressHydrationWarning>
       <body className="bg-[#f6f6f6] dark:bg-[#1D2D50]">
         <ThemeProvider attribute="class">
-          <main className="max-w-[1280px] min-h-screen mx-auto border-l-[1px] border-r-[1px] relative">
+          <main className="max-w-[1280px] min-h-screen mx-auto  relative">
             <Navbar lang={params.lang} navigation={navigation} />
             {children}
           </main>

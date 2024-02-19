@@ -61,7 +61,7 @@ const page = () => {
           <img
             src="/my_photo.jpg"
             alt="me"
-            className="rounded-[24px] shadow-2xl"
+            className="rounded-[24px] shadow-2xl dark:grayscale dark:hover:grayscale-0 dark:transition-all dark:duration-500"
           />
         </div>
         <div className="md:w-[70%] w-full">
